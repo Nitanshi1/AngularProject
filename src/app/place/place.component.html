@@ -1,0 +1,14 @@
+<h1 align="center"><u>My Favourite Places to Visit</u></h1>
+<div>
+    <ul>
+        
+        <li *ngFor= "let places of places">
+            <span>{{places.SerialNo}} </span>
+            <span>{{places.Name}} </span>
+        </li>
+
+    </ul>
+</div>
+<div>
+    <input id="Name" [(ngModel)]="places[0].Name" placeholder="Name">
+</div>
