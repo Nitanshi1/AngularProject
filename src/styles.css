@@ -1,1 +1,41 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+.unique-list {
+  list-style-type: none;
+  padding: 0px;
+  margin: 20px;
+}
+.unique-list-item {
+  background-color: rgb(25, 198, 237);
+  width: 50% ;
+  height: 10%;
+  color: white;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgba(12, 12, 12, 0.3);
+  transition: background-color 0.3s ease-in-out;
+}
+
+.unique-list-item:hover {
+  background-color: rgb(84, 150, 226);
+  cursor: pointer;
+}
+.unique-class{
+  background-color: rgb(84, 150, 226);
+  margin: 2%;
+  padding: 10px;
+  text-align: left;
+}
+.unique-place{
+    background-color: rgb(84, 150, 226);
+  margin: 2%;
+  width: 40%;
+  padding: 20px;
+  text-align: left;
+}

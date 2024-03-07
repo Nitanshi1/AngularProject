@@ -1,0 +1,9 @@
+<div *ngIf="myplace">
+    <h2>{{myplace.Name | uppercase}} Details</h2>
+    <div>id: {{myplace.SerialNo}}</div>
+    
+    <div class="unique-place">
+        <label for="myplace">Place Name: </label>
+        <input id="myplace" [(ngModel)]="myplace.Name" placeholder="Name">
+    </div>
+</div>

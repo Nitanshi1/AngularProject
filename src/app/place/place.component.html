@@ -1,14 +1,13 @@
-<h1 align="center"><u>My Favourite Places to Visit</u></h1>
-<div>
-    <ul>
+<div class="unique-class">
+    <ul class="unique-list">
         
-        <li *ngFor= "let places of places">
-            <span>{{places.SerialNo}} </span>
-            <span>{{places.Name}} </span>
+        <li class="unique-list-item" *ngFor= "let places1 of places">
+            <button class="unique-button" type="button" (click) ="onSelect(places1)">
+            <span>{{places1.SerialNo}} </span>
+            <span>{{places1.Name}} </span>
+        </button>
         </li>
 
     </ul>
 </div>
-<div>
-    <input id="Name" [(ngModel)]="places[0].Name" placeholder="Name">
-</div>
+<app-place-details [myplace]="selectedPlace"></app-place-details>
