@@ -2,12 +2,13 @@
     <ul class="unique-list">
         
         <li class="unique-list-item" *ngFor= "let places1 of places">
-            <button class="unique-button" type="button" (click) ="onSelect(places1)">
+            <!-- <button class="unique-button" type="button" (click) ="onSelect(places1)"></button> -->
+            <a routerLink="/detail/{{places1.SerialNo}}">
             <span>{{places1.SerialNo}} </span>
             <span>{{places1.Name}} </span>
-        </button>
+        </a>
         </li>
 
     </ul>
 </div>
-<app-place-details [myplace]="selectedPlace"></app-place-details>
+<!-- <app-place-details [myplace]="selectedPlace"></app-place-details> -->

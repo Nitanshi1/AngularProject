@@ -3,6 +3,8 @@
     <div>id: {{myplace.SerialNo}}</div>
     
     <div class="unique-place">
+        <button type="button" (click)="goBack()">Go Back!</button>
+              
         <label for="myplace">Place Name: </label>
         <input id="myplace" [(ngModel)]="myplace.Name" placeholder="Name">
     </div>

@@ -6,11 +6,12 @@ import { places } from './places';
 import { PlaceDetailsComponent } from '../place-details/place-details.component';
 import { NumberService } from '../number.service';
 import { MessageService } from '../message.service';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-place',
   standalone: true,
-  imports: [NgFor, FormsModule, NgIf, PlaceComponent,PlaceDetailsComponent],
+  imports: [NgFor, FormsModule, NgIf, PlaceComponent,PlaceDetailsComponent,RouterModule],
   templateUrl: './place.component.html',
   styleUrl: './place.component.css'
 })
@@ -27,10 +28,10 @@ export class PlaceComponent {
   }
 
 
-  selectedPlace?: places;
-  onSelect(place: places): void{
-  this.selectedPlace = place;
-  this.messageService.add(`Message shown is........${place.Name},${place.SerialNo}`)
+  // selectedPlace?: places;
+  // onSelect(place: places): void{
+  // this.selectedPlace = place;
+  // this.messageService.add(`Message shown is........${place.Name},${place.SerialNo}`)
   
-  }
+  // }
 }

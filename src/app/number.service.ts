@@ -16,4 +16,10 @@ export class NumberService {
     this.messageService.add('MemberService: fetched Member details...');
     return places2;
   }
+    getPlacedata(SerialNo:number) :Observable<places>{
+      const myfavplace=FavPlaces.find((places)=>places.SerialNo===SerialNo)!;
+      this.messageService.add(`Member displayed: fetched Member id =${SerialNo}....`);
+      return of(myfavplace);
+    }
+  
 }
