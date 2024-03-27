@@ -31,4 +31,9 @@ export class PlaceDetailsComponent {
     goBack():void{
       this.location.back();
     }
+//     save(): void {
+//         if(this.myplace){
+//           this.MemberService.updatePlaces(this.myplace).subscribe(()=> this.goBack());
+//         }
+// }
 }

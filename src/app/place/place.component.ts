@@ -24,7 +24,9 @@ export class PlaceComponent {
   }
 
   getPlaces(): void{
+
     this.numberService.getPlaces().subscribe(places =>this.places=places);
+    console.log(this.places);
   }
 
 
@@ -34,4 +36,19 @@ export class PlaceComponent {
   // this.messageService.add(`Message shown is........${place.Name},${place.SerialNo}`)
   
   // }
+
+  // add(name:string):void{
+  //   name=name.trim();
+  //   if(!name){
+  //     return
+  //   }
+  //   this.numberService.addPlaces({name} as places).subscribe(place=>this.places.push(place));
+  // }
+
+  // delete(place:places):void{
+  //   this.places=this.places.filter(p=>p!= place);
+  //   this.numberService.deletePlaces(place.SerialNo).subscribe();
+  // }
 }
+
+

@@ -5,4 +5,5 @@ export const FavPlaces:places[]=[
     {Name:'Rishikesh', SerialNo: 2 },
     {Name:'Kerala', SerialNo: 3 },
     {Name:'Kasol', SerialNo: 4 }
-]
+
+];
